@@ -27,6 +27,7 @@
   - Responsivní design (podle velikosti obrazovky mění rozložení seznamu).
   - Intuitivní ovládání (jasně označená tlačítka a přehledná navigace).
 
+
 ---
 
 ## Technické řešení a technická specifikace
