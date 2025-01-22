@@ -1,0 +1,121 @@
+/* Základní stylování */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kontejner aplikace */
+#app {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input {
+    flex: 1 1 calc(33.33% - 10px);
+}
+
+button {
+    flex: 1 1 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Seznam úkolů */
+#task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styl jednotlivých úkolů */
+#task-list li {
+    flex: 1 1 calc(33.33% - 20px);
+    padding: 15px;
+    background: #fffbe6;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    transition: background 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+#task-list li:hover {
+    background: #fff3cd;
+}
+
+.task-content {
+    cursor: pointer;
+    flex: 1;
+}
+
+.task-content strong {
+    font-size: 1.2em;
+    color: #212529;
+}
+
+.task-content em {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: right;
+}
+
+/* obrazovky */
+@media (max-width: 768px) {
+    #task-list li {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #task-list li {
+        flex: 1 1 100%;
+    }
+}
