@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Seznam úkolů</h1>
+        <!-- Formulář pro přidání úkolu -->
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Název úkolu" required>
+            <input type="text" id="task-desc" placeholder="Popis úkolu">
+            <input type="date" id="task-deadline" required>
+            <button type="submit">Přidat úkol</button>
+        </form>
+        <!-- Seznam úkolů -->
+        <ul id="task-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
